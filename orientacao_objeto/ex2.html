@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Carro(_marca,_anoDeFabr,_velMax,_velAtual){
+            this.marca = _marca
+            this.anoDeFabr = _anoDeFabr
+            this.velMax = _velMax
+            this.velAtual = _velAtual
+        }
+        Carro.prototype.acelerar = function (){
+            if(this.velAtual == 0){ 
+                alert("Velocidade reduzida")
+            }else{
+                alert("Impossivel carro ja esta parado")
+            }   
+        }
+        
+        
+        
+        
+        
+        carro1 = new Carro("honda", 2018, 1,0)
+        
+        
+        
+        
+        //carro2 = new Carro("","","","",0)
+        
+        alert(carro1.velMax)
+        //alert(carro1.velAtual)
+        
+        carro1.acelerar()
+        //carro2.acelerar()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
